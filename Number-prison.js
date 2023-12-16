@@ -31,3 +31,5 @@ const findNumber = array => {
   const currentSum = array.reduce((acc, num) => acc + num, 0)
   return totalSum - currentSum
 }
+
+// or
