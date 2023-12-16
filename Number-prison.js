@@ -33,3 +33,13 @@ const findNumber = array => {
 }
 
 // or
+
+function findNumber(array) {
+  if (!array.length) return 1
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i]
+  }
+  const l = array.length + 1
+  return (l * (l + 1) / 2) - sum
+}
