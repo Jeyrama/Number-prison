@@ -24,3 +24,10 @@ Examples:
 
 
 // Solution
+
+const findNumber = array => {
+  const totalLength = array.length + 1
+  const totalSum = (totalLength * (totalLength + 1)) / 2
+  const currentSum = array.reduce((acc, num) => acc + num, 0)
+  return totalSum - currentSum
+}
